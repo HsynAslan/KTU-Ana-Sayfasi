@@ -20,10 +20,46 @@
         text-decoration: none;
         color: white;
       }
+      .amblem img {
+        height: 16vh;
+      }
+      .ryuk-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ryuk-right {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+      }
+      .ryuk-div-button {
+        background-color: aliceblue;
+        transition: 1s;
+      }
+      .ryuk-div-button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: 1s;
+      }
+      .ryuk-div-button:hover a {
+        color: white;
+        transition: 0.6s;
+      }
+      .ryuk-div-button a {
+        color: black;
+        transition: 0.6s;
+        text-decoration: none;
+      }
+      /* .ryuk-text-color-black {
+        color: black;
+      }
+      .ryuk-text-color-black:hover {
+        color: white;
+      } */
     </style>
   </head>
   <body>
-    <div class="row navbar2 text-bg-secondary p-3">
+    <div class="row navbar2 text-bg-info p-1">
       <div class="col-7">
         <!-- bosluk için kullanıldı -->
       </div>
@@ -55,6 +91,34 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+          <a href="">Kurumsal</a>
+        </div>
+        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+          <a href="">Öğrenci</a>
+        </div>
+        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+          <a href="">Akademik</a>
+        </div>
+        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+          <a href="">İdari</a>
+        </div>
+        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+          <a href="">Araştırma</a>
+        </div>
+        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+          <a href="">Hızli Erişim</a>
+        </div>
+        <div class="col-md-6 text-wrap ryuk-right amblem">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Karadeniz_Technical_University_logo.svg/2560px-Karadeniz_Technical_University_logo.svg.png"
+            alt="ktu amblem"
+          />
         </div>
       </div>
     </div>
