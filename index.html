@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,9 +13,6 @@
     <title>Anasayfa | KARADENİZ TEKNİK ÜNİVERSİTESİ</title>
 
     <style>
-      .navbar {
-        background-color: black;
-      }
       .navbar2 a {
         text-decoration: none;
         color: white;
@@ -56,6 +53,27 @@
       .ryuk-text-color-black:hover {
         color: white;
       } */
+      .ryuk-text-min {
+        color: white;
+        font-size: small;
+      }
+      .ryuk-text-med,
+      .ryuk-text-med a,
+      .ryuk-text-min,
+      .ryuk-text-min a {
+        color: white;
+        font-size: medium;
+        text-decoration: none;
+      }
+      .ryuk-text-max {
+        color: white;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+      #kurumsalID {
+        display: none;
+        background-color: #00426a;
+      }
     </style>
   </head>
   <body>
@@ -94,25 +112,29 @@
         </div>
       </div>
     </div>
+
     <div class="container mt-4">
       <div class="row">
-        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
-          <a href="">Kurumsal</a>
+        <div
+          class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded"
+          onclick="myFunctionKurumsal()"
+        >
+          Kurumsal
         </div>
         <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
-          <a href="">Öğrenci</a>
+          Öğrenci
         </div>
         <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
-          <a href="">Akademik</a>
+          Akademik
         </div>
         <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
-          <a href="">İdari</a>
+          İdari
         </div>
         <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
-          <a href="">Araştırma</a>
+          Araştırma
         </div>
         <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
-          <a href="">Hızli Erişim</a>
+          Hızli Erişim
         </div>
         <div class="col-md-6 text-wrap ryuk-right amblem">
           <img
@@ -123,10 +145,102 @@
       </div>
     </div>
 
+    <div class="container-fluid mt-1" id="kurumsalID">
+      <div class="row d-flex justify-content-around">
+        <div class="col ryuk-center ryuk-text-max p-5 border">KURUMSAL</div>
+
+        <div class="col ryuk-text-med">
+          <div class="container-fluid">
+            <div class="row border-bottom border-2 ryuk-hover-underline">
+              <a href="">Genel</a>
+            </div>
+            <div class="row">
+              <a href="">Yönetim</a>
+            </div>
+            <div class="row">
+              <a href="">Bağlı Birimler</a>
+            </div>
+            <div class="row">
+              <a href="">Kurullar Ve Komisyonlar</a>
+            </div>
+            <div class="row">
+              <a href="">Kişisel Verilerin Korunması</a>
+            </div>
+          </div>
+        </div>
+        <div class="col ryuk-text-min">
+          <div class="container-fluid">
+            <div class="row border-bottom border-2 ryuk-hover-underline">
+              <a href="">Tarihçe</a>
+            </div>
+            <div class="row">
+              <a href="">Misyon Ve Vizyon</a>
+            </div>
+            <div class="row">
+              <a href="">Genel Tanıtım</a>
+            </div>
+            <div class="row">
+              <a href="">Mevzuat</a>
+            </div>
+            <div class="row">
+              <a href="">Sosyal Yaşam</a>
+            </div>
+            <div class="row">
+              <a href="">Sanal Gezinti</a>
+            </div>
+            <div class="row">
+              <a href="">Harita</a>
+            </div>
+            <div class="row">
+              <a href="">Fahri Doktora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col ryuk-text-min">
+          <div class="container-fluid">
+            <div class="row border-bottom border-2 ryuk-hover-underline">
+              <a href="">Kalite Politikası</a>
+            </div>
+            <div class="row">
+              <a href="">Stratejik Plan</a>
+            </div>
+            <div class="row">
+              <a href="">Uluslararası Üyeliklerimiz</a>
+            </div>
+            <div class="row">
+              <a href="">Akredite Birimler</a>
+            </div>
+            <div class="row">
+              <a href="">Kurumsal Kimlik</a>
+            </div>
+            <div class="row">
+              <a href="">Sayılarla Ktü</a>
+            </div>
+            <div class="row">
+              <a href="">Tanıtım Sunumu</a>
+            </div>
+            <div class="row">
+              <a href="">Basında KTÜ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function myFunctionKurumsal() {
+        var x = document.getElementById("kurumsalID");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
