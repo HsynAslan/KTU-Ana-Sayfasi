@@ -11,11 +11,15 @@
       crossorigin="anonymous"
     />
     <title>Anasayfa | KARADENİZ TEKNİK ÜNİVERSİTESİ</title>
-
+    <script
+      src="https://kit.fontawesome.com/d497048b92.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       .navbar2 a {
         text-decoration: none;
-        color: white;
+        color: black;
+        font-size: small;
       }
       .amblem img {
         height: 16vh;
@@ -74,10 +78,33 @@
         display: none;
         background-color: #00426a;
       }
+      .ryuk-erisim-linkleri {
+        background-image: url("https://www.ktu.edu.tr/image/top_bg.png");
+      }
+      .ryuk-cursor-pointer {
+        cursor: pointer;
+      }
+      .ryuk-icon {
+        color: #00426a;
+      }
+      .ryuk-icon-baslik {
+        font-family: "HurmeBold", HurmeBold !important;
+        margin-bottom: 2px;
+        color: #00426a;
+        font-weight: 800;
+        line-height: 1;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .ryuk-icon-aciklama {
+        font-weight: 600;
+        font-size: 12px;
+        color: #808285;
+      }
     </style>
   </head>
   <body>
-    <div class="row navbar2 text-bg-info p-1">
+    <div class="row navbar2 ryuk-erisim-linkleri p-1">
       <div class="col-7">
         <!-- bosluk için kullanıldı -->
       </div>
@@ -121,19 +148,34 @@
         >
           Kurumsal
         </div>
-        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+        <div
+          class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded"
+          onclick="myFunctionKurumsal()"
+        >
           Öğrenci
         </div>
-        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+        <div
+          class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded"
+          onclick="myFunctionKurumsal()"
+        >
           Akademik
         </div>
-        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+        <div
+          class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded"
+          onclick="myFunctionKurumsal()"
+        >
           İdari
         </div>
-        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+        <div
+          class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded"
+          onclick="myFunctionKurumsal()"
+        >
           Araştırma
         </div>
-        <div class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded">
+        <div
+          class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded"
+          onclick="myFunctionKurumsal()"
+        >
           Hızli Erişim
         </div>
         <div class="col-md-6 text-wrap ryuk-right amblem">
@@ -223,6 +265,166 @@
               <a href="">Basında KTÜ</a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide mt-3"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.ktu.edu.tr/slayt/slaytrG9EgQ.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.ktu.edu.tr/slayt/slaytYh9Kxc.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.ktu.edu.tr/slayt/tr_e6f636.gif"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container-fluid ryuk-erisim-linkleri">
+      <div class="container">
+        <div class="row border">
+          <div
+            class="col border ryuk-cursor-pointer"
+            onclick="location.href='https://bys.ktu.edu.tr/';"
+          >
+            <div class="ryuk-icon">
+              <i class="fas fa-window-restore" style="font-size: 20px"></i>
+            </div>
+            <div class="ryuk-icon-baslik">BYS</div>
+            <div class="ryuk-icon-aciklama">Bilgi Yönetim Sistemi</div>
+          </div>
+
+          <div
+            class="col border ryuk-cursor-pointer"
+            onclick="location.href='https://ebys.ktu.edu.tr/';"
+          >
+            <div class="ryuk-icon">
+              <i class="fas fa-file-signature" style="font-size: 20px"></i>
+            </div>
+            <div class="ryuk-icon-baslik">EBYS</div>
+            <div class="ryuk-icon-aciklama">
+              Elektronik Belge Yönetim Sistemi
+            </div>
+          </div>
+
+          <div
+            class="col border ryuk-cursor-pointer"
+            onclick="location.href='https://www.ktu.edu.tr/bilgiislem/eposta';"
+          >
+            <div class="ryuk-icon">
+              <i class="fas fa-mail-bulk" style="font-size: 20px"></i>
+            </div>
+            <div class="ryuk-icon-baslik">Webmail</div>
+            <div class="ryuk-icon-aciklama">KTÜ E-Posta Hizmeti</div>
+          </div>
+
+          <div
+            class="col border ryuk-cursor-pointer"
+            onclick="location.href='https://www.ktu.edu.tr/yonetim';"
+          >
+            <div class="ryuk-icon">
+              <i class="fas fa-check-square" style="font-size: 20px"></i>
+            </div>
+            <div class="ryuk-icon-baslik">Strateji & Kalite</div>
+            <div class="ryuk-icon-aciklama">Kurumsal Gelişim ve Planlama</div>
+          </div>
+
+          <div
+            class="col border ryuk-cursor-pointer"
+            onclick="location.href='https://www.ktu.edu.tr/kik';"
+          >
+            <div class="ryuk-icon">
+              <i class="fas fa-tty" style="font-size: 20px"></i>
+            </div>
+            <div class="ryuk-icon-baslik">Kurumsal İletişim</div>
+            <div class="ryuk-icon-aciklama">Web, Radyo TV, Gazete</div>
+          </div>
+
+          <div
+            class="col border ryuk-cursor-pointer"
+            onclick="location.href='https://www.ktu.edu.tr/library';"
+          >
+            <div class="ryuk-icon">
+              <i class="fas fa-book" style="font-size: 20px"></i>
+            </div>
+            <div class="ryuk-icon-baslik">Kütüphane</div>
+            <div class="ryuk-icon-aciklama">KTÜ Kütüphanesi</div>
+          </div>
+
+          <div
+            class="col border ryuk-cursor-pointer"
+            onclick="location.href='https://uek.ktu.edu.tr/';"
+          >
+            <div class="ryuk-icon">
+              <i class="fas fa-podcast" style="font-size: 20px"></i>
+            </div>
+            <div class="ryuk-icon-baslik">Uzem</div>
+            <div class="ryuk-icon-aciklama">KTÜ Uzaktan Eğitim</div>
+          </div>
+
+          <div class="col"></div>
+          <div class="col"></div>
         </div>
       </div>
     </div>
