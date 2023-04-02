@@ -101,6 +101,40 @@
         font-size: 12px;
         color: #808285;
       }
+
+      /* ============ desktop view ============ */
+      @media all and (min-width: 992px) {
+        .dropdown-menu li {
+          position: relative;
+        }
+        .nav-item .submenu {
+          display: none;
+          position: absolute;
+          left: 100%;
+          top: -7px;
+        }
+        .nav-item .submenu-left {
+          right: 100%;
+          left: auto;
+        }
+        .dropdown-menu > li:hover {
+          background-color: #f1f1f1;
+        }
+        .dropdown-menu > li:hover > .submenu {
+          display: block;
+        }
+      }
+      /* ============ desktop view .end// ============ */
+
+      /* ============ small devices ============ */
+      @media (max-width: 991px) {
+        .dropdown-menu .dropdown-menu {
+          margin-left: 0.7rem;
+          margin-right: 0.7rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+      /* ============ small devices .end// ============ */
     </style>
   </head>
   <body>
@@ -142,7 +176,798 @@
 
     <div class="container mt-4">
       <div class="row">
-        <div
+        <div class="col-8">
+          <div class="container-fluid row">
+            <div class="col-2">
+              <ul class="nav-item dropdown">
+                <!-- baslık kısmı -->
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  KURUMSAL
+                </a>
+
+                <!-- ortanca kısma geçiş -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> Genel </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Tarihçe</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Misyon ve Vizyon</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Genel Tanıtım</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Mevzuat</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Sosyal Yaşam</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Sanal Gezinti</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Harita</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Fahri Doktora</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Kalite Politikasi</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Statejik Plan</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Uluslararası Üyeliklerimiz</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Akredite Birimler</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Kurumsal Kimlik</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Sayılarla KTÜ</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Tanıtım Sunumu</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Basında KTU</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Yönetim </a>
+                    <ul class="submenu dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Rektör</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Rektör Yardımcıları</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Üniversite Senatosu</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Üniversite Yönetim Kurulu</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Rektör Danışmanları</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Genel Sekreter</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Genel Sekreter Yardımcıları</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Daire Başkanları</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >İç Denetim Birimi Başkanlığı</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Organizasyon Şeması</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Önceki Rektörlerimiz</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Bağlı Birimler </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Kurumsal İletişim Koordinatörlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Kurumsal Gelişim ve Planlama Koordinatörlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Dış İlişkiler Genel Koordinatörlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Dijital Dönüşüm Ofisi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Proje Üretim Merkezi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Öğretim Üyesi Yetiştirme Programı Koordinatörlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >MYO Koordinatörlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Kültür Hizmetleri Koordinatörlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >YLSY Burs Koordinatörlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Üniversite Seçmeli Dersler Koordinatörlüğü</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Kurullar ve Komisyonlar
+                    </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">İç Kontrol</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Kalite Komisyonu</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Strateji Geliştirme Kurulu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Araştırma Üst Kurulu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Eğitim Komisyonu</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >KTÜ Şehir İş Birliği Komisyonu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">KTÜ Danışma Kurulu</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Uluslararasılaşma Çalışma Grubu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Diğer İdari ve Teknik Komisyonlar</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Akreditasyon Çalışma Grubu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sanayi İş Birliği Çalışma Grubu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Enstitü Çalışma Grubu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >UYGAR Çalışma Grubu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Bilimsel Araştırma Projeleri Komisyonu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Etik Kurullar</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Kişisel Verilerin Korunması
+                    </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Aydınlatma Metni</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul class="nav-item dropdown">
+                <!-- baslık kısmı -->
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  ÖĞRENCİ
+                </a>
+
+                <!-- ortanca kısma geçiş -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> Birimler </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Öğrenci İşleri Daire Başkanlığı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Uluslararası Öğrenci Birimi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Yabancı Uyruklu Öğrenci Sınavı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Türkçe Öğretimi Uyg. ve Araş. Mrk.</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Değişim Programları Koordinatörlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Kariyer Geliştirme Uyg. ve Araş. Mrk.</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Engelli Öğrenci Birimi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Öğrenci Kulüpleri</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> E-Öğrenci </a>
+                    <ul class="submenu dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Öğrenci Girişi</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Mezun Bilgi Sistemi</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Staj İşlemleri</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Memnuniyet Anketi</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Bize Yazın</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Eğitim </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Akademik Takvim</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >AKTS Ders Bilgi Paketi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Dönem Dersleri</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#">Ders Programı</a>
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Uzaktan Eğitim Merkezi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sürekli Eğitim Merkezi</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Aday Öğrenci </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Aday Öğrencilerimiz</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+
+
+
+            <div class="col-2">
+              <ul class="nav-item dropdown">
+                <!-- baslık kısmı -->
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  AKADEMİK
+                </a>
+
+                <!-- ortanca kısma geçiş -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> Fakülteler </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Diş Hekimliği Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Eczacılık Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Edebiyat Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Fen Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >İktisadi ve İdari Bilimler Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Mimarlık Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Mühendislik Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Of Teknoloji Fakültesi </a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Orman Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sağlık Bilimleri Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sürmene Deniz Bilimleri Fakültesi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Tıp Fakültesi</a
+                        >
+                      
+
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Enstitüler </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Adli Bilimler Enstitüsü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Deniz Bilimleri ve Teknolojisi Enstitüsü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Fen Bilimleri Enstitüsü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Karadeniz Araştırmaları Enstitüsü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sağlık Bilimleri Enstitüsü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sosyal Bilimler Enstitüsü</a
+                        >
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Yüksekokullar </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Yabancı Diller Yüksekokulu</a
+                        >
+                      </li>
+
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Meslek Yüksekokulları </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Araklı Ali Cevat Özyurt Meslek Yüksekokulu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Arsin Meslek Yüksekokulu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Çaykara Meslek Yüksekokulu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Maçka Meslek Yüksekokulu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Of Meslek Yüksekokulu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sağlık Hizmetleri Meslek Yüksekokulu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sürmene Abdullah Kanca Meslek Yüksekokulu</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Trabzon Meslek Yüksekokulu</a
+                        >
+                      </li>
+                      
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Rektörlüğe Bağlı Birimler </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Atatürk İlkeleri ve İnkılap Tarihi Bölümü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Beden Eğitimi Bölümü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Güzel Sanatlar Bölümü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Türk Dili Bölümü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Yabancı Diller Bölümü</a
+                        >
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  
+                  
+                    </ul>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+
+            <div class="col-2">
+              <ul class="nav-item dropdown">
+                <!-- baslık kısmı -->
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  İDARİ
+                </a>
+
+                <!-- ortanca kısma geçiş -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> Genel Sekreterlik </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Genel Sekreterlik</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Üniversite Yönetim Kurulu Kararları</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Senato Kararları</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Süreçler, Prosedürler, İş Akışları</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Formlar</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >KTÜ İdari Takvim</a
+                        >
+                      </li>
+                      
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Daire Başkanlıkları </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Bilgi İşlem Daire Başkanlığı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >İdari ve Mali İşler Daire Başkanlığı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Kütüphane ve Dokümantasyon Daire Başkanlığı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Öğrenci İşleri Daire Başkanlığı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Personel Daire Başkanlığı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sağlık Kültür ve Spor Daire Başkanlığı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Strateji Geliştirme Daire Başkanlığı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Yapı İşleri ve Teknik Daire Başkanlığı
+                          </a
+                        >
+                      </li>
+                      
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Diğer Birimler </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Dış İlişkiler Genel Koordinatörlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Döner Sermaye İşletme Müdürlüğü</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Hukuk Müşavirliği</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Öğretim Üyesi Yetiştirme Programı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sivil Savunma Uzmanlığı</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >İşyeri Sağlık ve Güvenlik Birimi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Bilgi Edinme Birimi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Mali İşlemler Destek Birimi</a
+                        >
+                      </li>
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Sıfır Atık Koordinatörlüğü</a
+                        >
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  
+                  
+                    </ul>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <!-- --------------- -->
+
+            <div class="col-2">
+              <ul class="nav-item dropdown">
+                <!-- baslık kısmı -->
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  ÖĞRENCİ
+                </a>
+
+                <!-- ortanca kısma geçiş -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> Birimler </a>
+                    <ul class="submenu dropdown-menu">
+                      <li onclick="location.href='#';">
+                        <a class="dropdown-item" href="#"
+                          >Öğrenci İşleri Daire Başkanlığı</a
+                        >
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  
+                  
+                    </ul>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+<!-- ----------- -->
+          </div>
+
+          <!-- <div
           class="col-md-1 text-wrap ryuk-center ryuk-div-button rounded"
           onclick="myFunctionKurumsal()"
         >
@@ -177,8 +1002,9 @@
           onclick="myFunctionKurumsal()"
         >
           Hızli Erişim
+        </div> -->
         </div>
-        <div class="col-md-6 text-wrap ryuk-right amblem">
+        <div class="col-md-4 text-wrap ryuk-right amblem">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Karadeniz_Technical_University_logo.svg/2560px-Karadeniz_Technical_University_logo.svg.png"
             alt="ktu amblem"
@@ -443,6 +1269,45 @@
           x.style.display = "none";
         }
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // make it as accordion for smaller screens
+        if (window.innerWidth < 992) {
+          // close all inner dropdowns when parent is closed
+          document
+            .querySelectorAll(".navbar .dropdown")
+            .forEach(function (everydropdown) {
+              everydropdown.addEventListener("hidden.bs.dropdown", function () {
+                // after dropdown is hidden, then find all submenus
+                this.querySelectorAll(".submenu").forEach(function (
+                  everysubmenu
+                ) {
+                  // hide every submenu as well
+                  everysubmenu.style.display = "none";
+                });
+              });
+            });
+
+          document
+            .querySelectorAll(".dropdown-menu a")
+            .forEach(function (element) {
+              element.addEventListener("click", function (e) {
+                let nextEl = this.nextElementSibling;
+                if (nextEl && nextEl.classList.contains("submenu")) {
+                  // prevent opening link if link needs to open dropdown
+                  e.preventDefault();
+                  if (nextEl.style.display == "block") {
+                    nextEl.style.display = "none";
+                  } else {
+                    nextEl.style.display = "block";
+                  }
+                }
+              });
+            });
+        }
+        // end if innerWidth
+      });
+      // DOMContentLoaded  end
     </script>
   </body>
 </html>
